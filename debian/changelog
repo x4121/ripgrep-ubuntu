@@ -1,0 +1,5 @@
+ripgrep (0.5.1-1) zesty; urgency=medium
+
+  * Initial release.
+
+ -- Armin Grodon <me@armingrodon.de>  Sat, 22 Apr 2017 02:35:37 +0200

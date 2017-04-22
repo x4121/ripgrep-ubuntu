@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	cargo build --release
+	mkdir -p target/release/bash
+	cp target/release/build/ripgrep-*/out/rg.bash-completion target/release/bash/rg

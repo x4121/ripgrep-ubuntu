@@ -1,0 +1,19 @@
+Source: ripgrep
+Section: universe/utils
+Priority: extra
+Maintainer: Armin Grodon <me@armingrodon.de>
+Build-Depends:
+ cargo,
+ debhelper (>= 9),
+ quilt,
+Standards-Version: 3.9.8
+Homepage: https://github.com/BurntSushi/ripgrep
+Vcs-Browser: https://github.com/BurntSushi/ripgrep.git
+Vcs-Git: https://github.com/BurntSushi/ripgrep.git
+
+Package: ripgrep
+Architecture: any
+Pre-Depends: dpkg (>= 1.17.14)
+Depends: ${shlibs:Depends}
+Description: A search tool that combines the usability of ag with the raw speed of grep
+ ripgrep is a line oriented search tool that combines the usability of The Silver Searcher (similar to ack) with the raw speed of GNU grep. ripgrep works by recursively searching your current directory for a regex pattern.
