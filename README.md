@@ -1,11 +1,13 @@
 # ripgrep-ubuntu
-Ubuntu build script for ripgrep (not working on Launchpad!)
+Ubuntu build script for [ripgrep](https://github.com/BurntSushi/ripgrep) (not working on Launchpad!)
 
 ## Build dependencies
-- cargo
+- cargo (>= 0.13.0)
 - debhelper
 - devscrips
 - quilt
+
+Build works on current Ubuntu 17.04
 
 ## Build steps
 - install build dependencies
@@ -18,3 +20,5 @@ Ubuntu build script for ripgrep (not working on Launchpad!)
 
 ## Pre-build
 [pre build for amd64](https://github.com/x4121/ripgrep-ubuntu/releases/download/v0.2/ripgrep_0.5.1-1_amd64.deb)
+
+Pre-build should work on Debian as well
