@@ -19,6 +19,7 @@ Build works on current Ubuntu 17.04
 - run `debuild`
 
 ## Pre-build
-[pre build for amd64](https://github.com/x4121/ripgrep-ubuntu/releases/download/v0.2/ripgrep_0.5.1-1_amd64.deb)
+- [amd64](https://github.com/x4121/ripgrep-ubuntu/releases/download/v0.2/ripgrep_0.5.1-1_amd64.deb)
+- [i386](https://github.com/x4121/ripgrep-ubuntu/releases/download/v0.2/ripgrep_0.5.1-1_i386.deb)
 
 Pre-build should work on Debian as well
