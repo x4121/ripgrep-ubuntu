@@ -1,5 +1,5 @@
 # ripgrep-ubuntu
-Ubuntu build script for [ripgrep](https://github.com/BurntSushi/ripgrep) (not working on Launchpad!)
+Ubuntu build script for [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Build dependencies
 - cargo (>= 0.13.0)
@@ -13,13 +13,23 @@ Build works on current Ubuntu 17.04
 - install build dependencies
 - download [source](https://github.com/BurntSushi/ripgrep/archive/0.5.1.tar.gz) as `ripgrep_0.5.1.orig.tar.gz`
 - extract source in `ripgrep-0.5.1/.`
-- download [buildscipt](https://github.com/x4121/ripgrep-ubuntu/releases/download/v0.2/ripgrep_0.5.1-1.debian.tar.xz)
+- download [buildscipt](https://launchpad.net/~x4121/+archive/ubuntu/ripgrep/+files/ripgrep_0.5.1-2.debian.tar.xz)
 - extract buildscript in `ripgrep-0.5.1/debian/.`
 - cd to `ripgrep-0.5.1/debian`
 - run `debuild`
 
-## Pre-build
-- [amd64](https://github.com/x4121/ripgrep-ubuntu/releases/download/v0.2/ripgrep_0.5.1-1_amd64.deb)
-- [i386](https://github.com/x4121/ripgrep-ubuntu/releases/download/v0.2/ripgrep_0.5.1-1_i386.deb)
+## Update build dependencies
+- install [cargo-vendor](https://github.com/alexcrichton/cargo-vendor)
+- cd to `ripgrep-0.5.1`
+- run `cargo vendor debian/vendor`
+- cd to `ripgrep-0.5.1/debian`
+- run `rm vendor.tar.gz; tar czf vendor.tar.gz; rm -rf vendor`
+
+## [Pre-build](https://launchpad.net/~x4121/+archive/ubuntu/ripgrep)
+```
+sudo add-apt-repository ppa:x4121/ripgrep
+sudo apt-get update
+sudo apt-get install ripgrep
+```
 
 Pre-build should work on Debian as well

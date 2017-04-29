@@ -1,3 +1,9 @@
+ripgrep (0.5.1-2) zesty; urgency=medium
+
+  * Prefetch sources with cargo-vendor.
+
+ -- Armin Grodon <me@armingrodon.de>  Sat, 29 Apr 2017 23:50:23 +0200
+
 ripgrep (0.5.1-1) zesty; urgency=medium
 
   * Initial release.

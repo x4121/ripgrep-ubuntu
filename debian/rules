@@ -4,7 +4,14 @@
 %:
 	dh $@
 
+override_dh_clean:
+	dh_clean
+	rm -rf vendor target
+
 override_dh_auto_build:
-	cargo build --release
+	mkdir -p .cargo
+	sed 's@$$PWD@$(CURDIR)@' debian/cargo.config > .cargo/config
+	tar xzf debian/vendor.tar.gz
+	cargo build --release --frozen --verbose
 	mkdir -p target/release/bash
 	cp target/release/build/ripgrep-*/out/rg.bash-completion target/release/bash/rg
