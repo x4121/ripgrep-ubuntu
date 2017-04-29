@@ -13,7 +13,7 @@ Build works on current Ubuntu 17.04
 - install build dependencies
 - download [source](https://github.com/BurntSushi/ripgrep/archive/0.5.1.tar.gz) as `ripgrep_0.5.1.orig.tar.gz`
 - extract source in `ripgrep-0.5.1/.`
-- download [buildscipt](https://launchpad.net/~x4121/+archive/ubuntu/ripgrep/+files/ripgrep_0.5.1-2.debian.tar.xz)
+- download [buildscipt](https://launchpad.net/~x4121/+archive/ubuntu/ripgrep/+files/ripgrep_0.5.1-3.debian.tar.xz)
 - extract buildscript in `ripgrep-0.5.1/debian/.`
 - cd to `ripgrep-0.5.1/debian`
 - run `debuild`
