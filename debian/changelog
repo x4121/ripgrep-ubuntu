@@ -1,3 +1,9 @@
+ripgrep (0.6.0-1) zesty; urgency=medium
+
+  * Update to upstream (0.6.0)
+
+ -- Armin Grodon <me@armingrodon.de>  Tue, 17 Oct 2017 21:23:58 +0200
+
 ripgrep (0.5.2-1) zesty; urgency=medium
 
   * Update to upstream (0.5.2)

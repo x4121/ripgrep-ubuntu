@@ -11,18 +11,18 @@ Build works on current Ubuntu 17.04
 
 ## Build steps
 - install build dependencies
-- download [source](https://github.com/BurntSushi/ripgrep/archive/0.5.2.tar.gz) as `ripgrep_0.5.2.orig.tar.gz`
-- extract source in `ripgrep-0.5.2/.`
-- download [buildscipt](https://launchpad.net/~x4121/+archive/ubuntu/ripgrep/+files/ripgrep_0.5.2-1.debian.tar.xz)
-- extract buildscript in `ripgrep-0.5.2/debian/.`
-- cd to `ripgrep-0.5.2/debian`
+- download [source](https://github.com/BurntSushi/ripgrep/archive/0.6.0.tar.gz) as `ripgrep_0.6.0.orig.tar.gz`
+- extract source in `ripgrep-0.6.0/.`
+- download [buildscipt](https://launchpad.net/~x4121/+archive/ubuntu/ripgrep/+files/ripgrep_0.6.0-1.debian.tar.xz)
+- extract buildscript in `ripgrep-0.6.0/debian/.`
+- cd to `ripgrep-0.6.0/debian`
 - run `debuild`
 
 ## Update build dependencies
 - install [cargo-vendor](https://github.com/alexcrichton/cargo-vendor)
-- cd to `ripgrep-0.5.2`
+- cd to `ripgrep-0.6.0`
 - run `cargo vendor debian/vendor`
-- cd to `ripgrep-0.5.2/debian`
+- cd to `ripgrep-0.6.0/debian`
 - run `rm vendor.tar.gz; tar czf vendor.tar.gz vendor; rm -rf vendor`
 
 ## [Pre-build](https://launchpad.net/~x4121/+archive/ubuntu/ripgrep)
