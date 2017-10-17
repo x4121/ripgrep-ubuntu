@@ -1,7 +1,7 @@
 target/release/rg usr/bin
 
 target/release/bash/rg usr/share/bash-completion/completions
-target/release/build/ripgrep-*/out/_rg usr/share/zsh/site-functions
+complete/_rg usr/share/zsh/site-functions
 target/release/build/ripgrep-*/out/rg.fish usr/share/fish/completions
 
 doc/rg.1 usr/share/man/man1
