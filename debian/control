@@ -3,7 +3,6 @@ Section: universe/utils
 Priority: extra
 Maintainer: Armin Grodon <me@armingrodon.de>
 Build-Depends:
- asciidoc,
  cargo,
  debhelper (>= 9),
  quilt,

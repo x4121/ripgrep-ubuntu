@@ -1,8 +1,13 @@
 # ripgrep-ubuntu
 Ubuntu build script for [ripgrep](https://github.com/BurntSushi/ripgrep)
 
+## Disclaimer
+This repositories and the resulting packages sole purpose is to bridge the time
+until ripgrep is available in official Ubuntu sources.
+If you only want to install ripgrep manually, you are most likely better off to
+download the provided `.deb` from the [ripgrep releases](https://github.com/BurntSushi/ripgrep/releases).
+
 ## Build dependencies
-- asciidoc (for generating man page)
 - cargo (>= 0.13.0)
 - debhelper
 - devscrips
