@@ -9,9 +9,13 @@ download the provided `.deb` from the [ripgrep releases](https://github.com/Burn
 
 ## Build dependencies
 - cargo (>= 0.13.0)
-- debhelper
-- devscrips
+- debhelper (>= 9)
 - quilt
+- libxslt1-dev
+- asciidoc
+- docbook-xsl
+- xsltproc
+- libxml2-utils
 
 Build works on Ubuntu >= 16.04
 
@@ -19,7 +23,7 @@ Build works on Ubuntu >= 16.04
 - install build dependencies
 - download [source](https://github.com/BurntSushi/ripgrep/archive/0.9.0.tar.gz) as `ripgrep_0.9.0.orig.tar.gz`
 - extract source in `ripgrep-0.9.0/.`
-- download [buildscipt](https://launchpad.net/~x4121/+archive/ubuntu/ripgrep/+files/ripgrep_0.9.0-1.debian.tar.xz)
+- download [buildscipt](https://launchpad.net/~x4121/+archive/ubuntu/ripgrep/+files/ripgrep_0.9.0-3.debian.tar.xz)
 - extract buildscript in `ripgrep-0.9.0/debian/.`
 - cd to `ripgrep-0.9.0/debian`
 - run `debuild`

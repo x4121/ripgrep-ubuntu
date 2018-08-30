@@ -1,3 +1,9 @@
+ripgrep (0.9.0-3) xenial; urgency=medium
+
+  * Fix man page generation.
+
+ -- Armin Grodon <me@armingrodon.de>  Thu, 30 Aug 2018 22:41:59 +0200
+
 ripgrep (0.9.0-2) xenial; urgency=medium
 
   * Workaround man page generation.

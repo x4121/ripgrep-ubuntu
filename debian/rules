@@ -12,7 +12,6 @@ override_dh_auto_build:
 	mkdir -p .cargo
 	sed 's@$$PWD@$(CURDIR)@' debian/cargo.config > .cargo/config
 	tar xzf debian/vendor.tar.gz
-	cargo build --release --frozen --verbose
+	cargo build --release --frozen -vv
 	mkdir -p target/release/bash
 	cp target/release/build/ripgrep-*/out/rg.bash target/release/bash/rg
-	cp debian/rg.1 .

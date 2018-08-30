@@ -6,6 +6,11 @@ Build-Depends:
  cargo,
  debhelper (>= 9),
  quilt,
+ libxslt1-dev,
+ asciidoc,
+ docbook-xsl,
+ xsltproc,
+ libxml2-utils
 Standards-Version: 3.9.8
 Homepage: https://github.com/BurntSushi/ripgrep
 Vcs-Browser: https://github.com/BurntSushi/ripgrep.git
